@@ -3,40 +3,40 @@ const moods = {
     bg: "linear-gradient(135deg,#f6d365,#fda085)",
     cover: "images/happy.jpg",
     songs: [
-      { title: "last-days-of-summer", artist: "Unknown Artist", src: "songs/last-days-of-summer-happy.mp3" },
-      { title: "bombinsound", artist: "Unknown Artist", src: "songs/bombinsound-happy.mp3" },
-      { title: "beautiful-dream", artist: "Unknown Artist", src: "songs/beautiful-dream.mp3" },
-      { title: "last-days-of-summer", artist: "Unknown Artist", src: "songs/last-days-of-summer-happy.mp3" },
-      { title: "everything-for-me-is-your", artist: "Unknown Artist", src: "songs/everything-for-me-is-your-happy.mp3" }
+      { title: "happy-childrens", artist: "Unknown Artist", src: "https://pixabay.com/music/happy-childrens-tunes-happy-444082/" },
+      { title: "modern-classical-relaxing", artist: "Unknown Artist", src: "https://pixabay.com/music/modern-classical-relaxing-happy-piano-291014/" },
+      { title: "modern-classical-golden-sunset", artist: "Unknown Artist", src: "https://pixabay.com/music/modern-classical-golden-sunset-piano-music-200136/" },
+      { title: "modern-classical-piano-melody", artist: "Unknown Artist", src: "https://pixabay.com/music/modern-classical-piano-melody-277609/" },
+      { title: "happy-childrens-tunes", artist: "Unknown Artist", src: "https://pixabay.com/music/happy-childrens-tunes-upbeat-energy-happy-folk-157754/" }
     ]
   },
   sad: {
     bg: "linear-gradient(135deg,#4facfe,#00f2fe)",
     cover: "images/sad.jpg",
     songs: [
-      { title: "the_mountain", artist: "Unknown Artist", src: "songs/the_mountain-sad.mp3" },
-      { title: "krasnoshchok", artist: "Unknown Artist", src: "songs/krasnoshchok-sad.mp3" },
-      { title: "remembering-you", artist: "Unknown Artist", src: "songs/remembering-you-sad.mp3" },
-      { title: "when-you-are-not-with-me", artist: "Unknown Artist", src: "songs/when-you-are-not-with-me-sad.mp3" }
+      { title: "solo-piano-sad", artist: "Unknown Artist", src: "https://pixabay.com/music/solo-piano-sad-sad-music-485935/" },
+      { title: "solo-piano1", artist: "Unknown Artist", src: "https://pixabay.com/music/solo-piano-sad-sad-music-490012/" },
+      { title: "solo-piano2", artist: "Unknown Artist", src: "https://pixabay.com/music/solo-piano-sad-sad-music-499904/" },
+      { title: "drama-scene-sad", artist: "Unknown Artist", src: "https://pixabay.com/music/drama-scene-sad-sad-piano-music-311697/" }
     ]
   },
   chill: {
     bg: "linear-gradient(135deg,#43e97b,#38f9d7)",
     cover: "images/chill.jpg",
     songs: [
-      { title: "nastelbom-lofi", artist: "Unknown Artist", src: "songs/nastelbom-lofi-chill.mp3" },
-      { title: "paulyudin", artist: "Unknown Artist", src: "songs/paulyudin-chill.mp3" },
-      { title: "pretty john", artist: "Unknown Artist", src: "songs/prettyjohn-chill.mp3" }
+      { title: "beats-chill", artist: "Unknown Artist", src: "https://pixabay.com/music/beats-chill-chill-music-505125/" },
+      { title: "sweet-life-luxury", artist: "Unknown Artist", src: "https://pixabay.com/music/beats-sweet-life-luxury-chill-438146/" },
+      { title: "chill-beats", artist: "Unknown Artist", src: "https://pixabay.com/music/beats-chill-beats-chill-491676/" }
     ]
   },
   energy: {
     bg: "linear-gradient(135deg,#fa709a,#fee140)",
     cover: "images/energy.jpg",
     songs: [
-      { title: "alec_koff-drum-action", artist: "Unknown Artist", src: "songs/alec_koff-drum-action-energy.mp3" },
-      { title: "paulyudin-sport", artist: "Unknown Artist", src: "songs/paulyudin-sport-energy.mp3" },
-      { title: "the_mountain", artist: "Unknown Artist", src: "songs/the_mountain-energy.mp3" },
-      { title: "tunetank-energy-gaming", artist: "Unknown Artist", src: "songs/tunetank-energy-gaming-energy.mp3" }
+      { title: "sport-rock", artist: "Unknown Artist", src: "https://pixabay.com/music/rock-energy-catcher-a-sport-rock-183632/" },
+      { title: "percussion-drum-action", artist: "Unknown Artist", src: "https://pixabay.com/music/percussion-drum-action-energy-493409/" },
+      { title: "gaming-sport-beat", artist: "Unknown Artist", src: "https://pixabay.com/music/trap-energy-gaming-sport-beat-347787/" },
+      { title: "energy-pop", artist: "Unknown Artist", src: "https://pixabay.com/music/future-bass-energy-pop-198537/" }
     ]
   }
 };
