@@ -3,40 +3,39 @@ const moods = {
     bg: "linear-gradient(135deg,#f6d365,#fda085)",
     cover: "images/happy.jpg",
     songs: [
-      { title: "happy-childrens", artist: "Unknown Artist", src: "https://pixabay.com/music/happy-childrens-tunes-happy-444082/" },
-      { title: "modern-classical-relaxing", artist: "Unknown Artist", src: "https://pixabay.com/music/modern-classical-relaxing-happy-piano-291014/" },
-      { title: "modern-classical-golden-sunset", artist: "Unknown Artist", src: "https://pixabay.com/music/modern-classical-golden-sunset-piano-music-200136/" },
-      { title: "modern-classical-piano-melody", artist: "Unknown Artist", src: "https://pixabay.com/music/modern-classical-piano-melody-277609/" },
-      { title: "happy-childrens-tunes", artist: "Unknown Artist", src: "https://pixabay.com/music/happy-childrens-tunes-upbeat-energy-happy-folk-157754/" }
+      {title: "Happy Morning",artist: "SoundHelix",src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"},
+      {title: "Sunny Vibes",artist: "SoundHelix",src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"},
+      {title: "Joy Ride",artist: "SoundHelix",src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"}
     ]
   },
+
   sad: {
     bg: "linear-gradient(135deg,#4facfe,#00f2fe)",
     cover: "images/sad.jpg",
     songs: [
-      { title: "solo-piano-sad", artist: "Unknown Artist", src: "https://pixabay.com/music/solo-piano-sad-sad-music-485935/" },
-      { title: "solo-piano1", artist: "Unknown Artist", src: "https://pixabay.com/music/solo-piano-sad-sad-music-490012/" },
-      { title: "solo-piano2", artist: "Unknown Artist", src: "https://pixabay.com/music/solo-piano-sad-sad-music-499904/" },
-      { title: "drama-scene-sad", artist: "Unknown Artist", src: "https://pixabay.com/music/drama-scene-sad-sad-piano-music-311697/" }
+      {title: "Lonely Night",artist: "SoundHelix",src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3"},
+      {title: "Deep Thoughts",artist: "SoundHelix",src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3"},
+      {title: "Slow Rain",artist: "SoundHelix",src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3"}
     ]
   },
+
   chill: {
     bg: "linear-gradient(135deg,#43e97b,#38f9d7)",
     cover: "images/chill.jpg",
     songs: [
-      { title: "beats-chill", artist: "Unknown Artist", src: "https://pixabay.com/music/beats-chill-chill-music-505125/" },
-      { title: "sweet-life-luxury", artist: "Unknown Artist", src: "https://pixabay.com/music/beats-sweet-life-luxury-chill-438146/" },
-      { title: "chill-beats", artist: "Unknown Artist", src: "https://pixabay.com/music/beats-chill-beats-chill-491676/" }
+      {title: "LoFi Relax",artist: "SoundHelix",src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3"},
+      {title: "Calm Breeze",artist: "SoundHelix",src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3"},
+      {title: "Evening Chill",artist: "SoundHelix",src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3"}
     ]
   },
+
   energy: {
     bg: "linear-gradient(135deg,#fa709a,#fee140)",
     cover: "images/energy.jpg",
     songs: [
-      { title: "sport-rock", artist: "Unknown Artist", src: "https://pixabay.com/music/rock-energy-catcher-a-sport-rock-183632/" },
-      { title: "percussion-drum-action", artist: "Unknown Artist", src: "https://pixabay.com/music/percussion-drum-action-energy-493409/" },
-      { title: "gaming-sport-beat", artist: "Unknown Artist", src: "https://pixabay.com/music/trap-energy-gaming-sport-beat-347787/" },
-      { title: "energy-pop", artist: "Unknown Artist", src: "https://pixabay.com/music/future-bass-energy-pop-198537/" }
+      {title: "Workout Boost",artist: "SoundHelix",src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3"},
+      {title: "Power Run",artist: "SoundHelix",src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-11.mp3"},
+      {title: "High Energy",artist: "SoundHelix",src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-12.mp3"}
     ]
   }
 };
@@ -70,7 +69,7 @@ function loadMood(moodName) {
   document.body.style.background = moods[currentMood].bg;
   cover.src = moods[currentMood].cover;
 
-  /* ⭐ highlight mood */
+  /* highlight mood */
   document.querySelectorAll(".mood").forEach(btn => {
       btn.classList.remove("active");
   });
