@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Player Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Splash Screen -->
+<div id="loader">
+    <div class="loader-content">
+        <h1 class="loader-title">🎧 Mood Player</h1>
+        <div class="loader-bar"></div>
+    </div>
+</div>
+
+<div class="container">
+    <h1>🎧 Mood Player</h1>
+
+    <div class="moods">
+        <button class="mood" data-mood="happy">😊 Happy</button>
+        <button class="mood" data-mood="sad">😢 Sad</button>
+        <button class="mood" data-mood="chill">😌 Chill</button>
+        <button class="mood" data-mood="energy">⚡ Energy</button>
+    </div>
+
+    <div class="player">
+        <div class="now-playing">
+            <img id="cover" src="images/default.jpg" alt="Album cover">
+            <h2 id="title">Select Mood</h2>
+            <p id="artist">---</p>
+        </div>
+
+        <div class="controls">
+            <button id="prev" aria-label="Previous song">⏮</button>
+            <button id="play" aria-label="Play or pause">▶</button>
+            <button id="next" aria-label="Next song">⏭</button>
+        </div>
+
+        <div class="progress-container" aria-label="Song progress">
+            <div class="progress" id="progress"></div>
+        </div>
+
+        <div class="time">
+            <span id="current-time">0:00</span>
+            <span id="duration">0:00</span>
+        </div>
+
+        <div class="extra">
+            <button id="shuffle" aria-label="Shuffle">🔀</button>
+            <button id="repeat" aria-label="Repeat">🔁</button>
+        </div>
+
+        <div class="volume">
+            <span>🔊</span>
+            <input type="range" id="volume" min="0" max="1" step="0.01" value="1" aria-label="Volume">
+        </div>
+
+        <audio id="audio"></audio>
+    </div>
+
+    <div id="playlist"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

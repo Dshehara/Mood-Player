@@ -1,0 +1,330 @@
+* {
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    transition: background 0.5s ease;
+}
+
+/* CONTAINER */
+.container {
+    width: min(100%, 420px);
+    padding: 18px;
+    border-radius: 22px;
+    backdrop-filter: blur(18px);
+    background: rgba(255,255,255,0.12);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+/* LOADER FULL SCREEN */
+#loader {
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.8s ease, visibility 0.8s;
+}
+
+/* Hide loader */
+#loader.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Loader content */
+.loader-content {
+    text-align: center;
+}
+
+/* Title (reuse gradient style) */
+.loader-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+    background: linear-gradient(90deg,#fff,#ffd6ff,#caffbf,#a0c4ff);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: gradientMove 5s ease infinite;
+}
+
+/* Loading bar */
+.loader-bar {
+    width: 120px;
+    height: 4px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Moving bar */
+.loader-bar::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 40%;
+    background: white;
+    border-radius: 10px;
+    animation: loading 1.2s infinite;
+}
+
+@keyframes loading {
+    0% { left: -40%; }
+    100% { left: 100%; }
+}
+
+/* TITLE */
+h1 {
+    font-size: clamp(30px, 4vw, 35px);
+    margin-bottom: 14px;
+}
+
+/* MOODS */
+.moods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.mood {
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background: rgba(255,255,255,0.2);
+    color: white;
+    transition: 0.2s;
+    font-size: 14px;
+}
+
+.mood:hover {
+    transform: scale(1.05);
+}
+
+/* ACTIVE MOOD */
+.mood.active {
+    background: white;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(255,255,255,0.6);
+}
+
+/* NOW PLAYING BLOCK */
+.now-playing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 18px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ONLY THIS ANIMATES */
+.playing .now-playing {
+    animation: pulse 1.6s ease-in-out infinite;
+    box-shadow: 0 0 18px rgba(68, 52, 52, 0.15);
+}
+
+@keyframes pulse {
+    0%,100% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+}
+
+/* IMAGE */
+.now-playing img {
+    width: clamp(90px, 25vw, 130px);
+    height: clamp(90px, 25vw, 130px);
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+/* TEXT */
+.now-playing h2 {
+    margin: 0;
+    font-size: clamp(18px, 4vw, 22px);
+}
+
+.now-playing p {
+    margin: 4px 0 0;
+    opacity: 0.8;
+}
+
+/* CONTROLS */
+.controls {
+    margin-top: 10px;
+}
+
+.controls button,
+.extra button {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin: 6px;
+    transition: 0.2s;
+    background: rgba(255,255,255,0.9);
+}
+
+/* SMOOTH HOVER */
+.controls button:hover,
+.extra button:hover {
+    transform: scale(1.05);
+}
+
+/* PLAY BUTTON */
+#play {
+    background: white;
+    color: black;
+    font-weight: bold;
+}
+
+/* PROGRESS BAR */
+.progress-container {
+    height: 5px;
+    background: rgba(255,255,255,0.3);
+    margin: 12px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.progress {
+    height: 5px;
+    background: white;
+    width: 0%;
+}
+
+/* TIME */
+.time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+/* EXTRA BUTTONS */
+.extra {
+    margin-top: 8px;
+}
+
+/* VOLUME */
+.volume {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.volume input {
+    width: 120px;
+}
+
+/* PLAYLIST */
+#playlist {
+    max-height: 160px;
+    overflow-y: auto;
+    margin-top: 10px;
+
+    /* Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,255,255,0.2) transparent;
+}
+
+/* SONG ITEM */
+.song {
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.2);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.song:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+.song.active {
+    background: rgba(255,255,255,0.5);
+    font-weight: bold;
+}
+
+/* PREMIUM SCROLLBAR */
+
+/* Chrome / Edge */
+#playlist::-webkit-scrollbar {
+    width: 6px;
+}
+
+#playlist::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#playlist::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.15);
+    border-radius: 10px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+/* Show on hover */
+#playlist:hover::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.35);
+    opacity: 1;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 480px) {
+
+    .container {
+        width: 95%;
+        padding: 14px;
+    }
+
+    .controls button {
+        width: 38px;
+        height: 38px;
+    }
+
+    .volume input {
+        width: 90px;
+    }
+
+    #playlist {
+        max-height: 130px;
+    }
+}
+
+/* 📲 TABLET */
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        width: 85%;
+    }
+}
+
+/* 🖥 DESKTOP */
+@media (min-width: 1024px) {
+    .container {
+        width: 420px;
+    }
+}
