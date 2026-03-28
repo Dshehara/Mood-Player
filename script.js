@@ -3,9 +3,10 @@ const moods = {
     bg: "linear-gradient(135deg,#f6d365,#fda085)",
     cover: "images/happy.jpg",
     songs: [
-      {title: "Happy Morning",artist: "SoundHelix",src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"},
-      {title: "Sunny Vibes",artist: "SoundHelix",src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"},
-      {title: "Joy Ride",artist: "SoundHelix",src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"}
+      { title: "Happy Morning", artist: "SoundHelix", src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" },
+      { title: "Sunny Day", artist: "SoundHelix", src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" },
+      { title: "Joy Ride", artist: "SoundHelix", src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" },
+      { title: "Good Vibes", artist: "SoundHelix", src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3" }
     ]
   },
 
@@ -13,9 +14,10 @@ const moods = {
     bg: "linear-gradient(135deg,#4facfe,#00f2fe)",
     cover: "images/sad.jpg",
     songs: [
-      {title: "Lonely Night",artist: "SoundHelix",src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3"},
-      {title: "Deep Thoughts",artist: "SoundHelix",src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3"},
-      {title: "Slow Rain",artist: "SoundHelix",src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3"}
+      { title: "Lonely Night", artist: "SoundHelix", src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3" },
+      { title: "Deep Thoughts", artist: "SoundHelix", src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3" },
+      { title: "Blue Rain", artist: "SoundHelix", src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3" },
+      { title: "Lost Memories", artist: "SoundHelix", src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3" }
     ]
   },
 
@@ -23,9 +25,10 @@ const moods = {
     bg: "linear-gradient(135deg,#43e97b,#38f9d7)",
     cover: "images/chill.jpg",
     songs: [
-      {title: "LoFi Relax",artist: "SoundHelix",src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3"},
-      {title: "Calm Breeze",artist: "SoundHelix",src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3"},
-      {title: "Evening Chill",artist: "SoundHelix",src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3"}
+      { title: "LoFi Relax", artist: "SoundHelix", src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3" },
+      { title: "Calm Breeze", artist: "SoundHelix", src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3" },
+      { title: "Evening Chill", artist: "SoundHelix", src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-11.mp3" },
+      { title: "Soft Flow", artist: "SoundHelix", src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-12.mp3" }
     ]
   },
 
@@ -33,9 +36,10 @@ const moods = {
     bg: "linear-gradient(135deg,#fa709a,#fee140)",
     cover: "images/energy.jpg",
     songs: [
-      {title: "Workout Boost",artist: "SoundHelix",src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3"},
-      {title: "Power Run",artist: "SoundHelix",src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-11.mp3"},
-      {title: "High Energy",artist: "SoundHelix",src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-12.mp3"}
+      { title: "Workout Boost", artist: "SoundHelix", src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-13.mp3" },
+      { title: "Power Run", artist: "SoundHelix", src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-14.mp3" },
+      { title: "High Energy", artist: "SoundHelix", src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-15.mp3" },
+      { title: "Fast Lane", artist: "SoundHelix", src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-16.mp3" }
     ]
   }
 };
